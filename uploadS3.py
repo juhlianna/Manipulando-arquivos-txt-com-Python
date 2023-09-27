@@ -37,7 +37,7 @@ def upload_file(FILE_UPLOAD, bucket, object_name=None):
         return False
     return True
 
-# Upload DO ARQUIVO PARA O BUCKET
+# Upload DO ARQUIVO PARA O BUCKET no s3
 s3 = boto3.client('s3')
 with open(Arquivo_UPLOAD, "rb") as f:
     s3.upload_fileobj(f, BUCKET_NAME, "UploadExtrato2023Mod")
