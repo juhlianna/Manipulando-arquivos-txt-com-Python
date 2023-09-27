@@ -18,3 +18,6 @@ with open('EXTRATO2023Mod.txt', 'w') as file_saida:
 
 #Resultado
 print(result)
+
+
+
